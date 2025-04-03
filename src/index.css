@@ -1,0 +1,93 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.annotation-container-grid {
+  display: grid; /* Use Grid layout */
+  /* Define a single grid cell area */
+  grid-template-columns: 1fr; /* Single column takes full width */
+  grid-template-rows: auto; /* Row height determined by content (image) */
+  width: 100%; /* Or specific dimensions */
+  max-width: 900px; /* Example constraint */
+  margin: auto; /* Center the container */
+  /* We no longer need position: relative here for layering */
+}
+
+.background-image-grid {
+  /* Place the image in the first cell */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  /* Make sure it behaves correctly */
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  /* Ensure it's below the overlay */
+  z-index: 1;
+}
+
+.annotations-overlay-grid {
+  /* Place the overlay in the EXACT SAME cell as the image */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  /* CRITICAL: This layer MUST be a positioning context for its children */
+  position: relative;
+
+  /* Ensure it's above the image */
+  z-index: 2;
+
+  /* Optional: If children might overflow */
+  overflow: hidden;
+  pointer-events: none; /* Allows clicks/hovers to pass through */
+
+  /* We DON'T need top, left, width, height, or position: absolute here anymore */
+  /* Grid layout handles its position and size based on the grid cell */
+}
+
+/* --- Styles for annotations INSIDE the overlay remain the same --- */
+/* --- (using position: absolute relative to .annotations-overlay-grid) --- */
+
+.annotation-line {
+  position: absolute; /* Positioned relative to .annotations-overlay-grid */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* height/width/top/left set via inline styles */
+  z-index: 3; /* Above overlay background, if overlay had one */
+}
+
+.annotation-text {
+  position: absolute; /* Positioned relative to .annotations-overlay-grid */
+  color: rgba(255, 255, 255, 0.9);
+  font-family: sans-serif;
+  font-size: 10px;
+  line-height: 1.3;
+  pointer-events: auto; /* Make text selectable */
+  white-space: pre-line;
+  max-width: 150px;
+  z-index: 4; /* Above lines */
+}
+
+.annotation-text span {
+   display: block;
+}
+
+.annotation-text .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+
+.annotation-text .description {
+  font-size: 9px;
+}
