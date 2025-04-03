@@ -20,8 +20,8 @@ const defaultFeatures = [
   },
   {
     id: 'bottom-left',
-    line: { top: '88%', left: '20%', width: '10%', height: '1px', rotate: -90, origin: '0 0' },
-    text: { top: '92%', left: '20%', content: 'Lower Feature\nDetails here...' }
+    line: { top: '82%', left: '26.5%', width: '2px', height: '8%',  origin: '0 0' },
+    text: { top: '86%', left: '27.5%', content: 'Lower Feature\nDetails here...' }
   },
    {
     id: 'arm-rest',
