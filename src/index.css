@@ -14,19 +14,18 @@
 }
 .annotation-container-grid {
   display: grid; /* Use Grid layout */
-  /* Define a single grid cell area */
+  /* Define grid areas */
+  grid-template-areas: 
+    "layer"; /* Single area named 'image' */
   grid-template-columns: 1fr; /* Single column takes full width */
   grid-template-rows: auto; /* Row height determined by content (image) */
   width: 100%; /* Or specific dimensions */
-  /* max-width: 900px; */
   margin: auto; /* Center the container */
-  /* We no longer need position: relative here for layering */
 }
 
 .background-image-grid {
-  /* Place the image in the first cell */
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  /* Assign to the 'image' area */
+  grid-area: layer;
   /* Make sure it behaves correctly */
   display: block;
   width: 100%;
@@ -37,10 +36,8 @@
 }
 
 .annotations-overlay-grid {
-  /* Place the overlay in the EXACT SAME cell as the image */
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-
+  /* Assign to the 'image' area */
+  grid-area: layer;
   /* CRITICAL: This layer MUST be a positioning context for its children */
   position: relative;
 
