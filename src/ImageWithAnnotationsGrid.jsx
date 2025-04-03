@@ -25,8 +25,8 @@ const defaultFeatures = [
   },
    {
     id: 'arm-rest',
-    line: { top: '65%', left: '5%', width: '5%', height: '1px', rotate: -90, origin: '0 0' },
-    text: { top: '70%', left: '3%', content: 'Armrest Detail\nFSC Certified Wood...' }
+    line: { top: '20%', left: '80.5%', width: '2px', height: '20%',  origin: '0 0' },
+    text: { top: '20%', left: '81.5%', content: 'Armrest Detail\nFSC Certified Wood...' }
   },
    {
     id: 'ky-rest',
