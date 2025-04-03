@@ -27,7 +27,18 @@ const defaultFeatures = [
     id: 'arm-rest',
     line: { top: '65%', left: '5%', width: '5%', height: '1px', rotate: -90, origin: '0 0' },
     text: { top: '70%', left: '3%', content: 'Armrest Detail\nFSC Certified Wood...' }
+  },
+   {
+    id: 'ky-rest',
+    line: { top: '20%', left: '8%', width: '2px', height: '33%',  origin: '0 0' },
+    text: { top: '20%', left: '9%', content: 'Armrest Detail\nFSC Certified Wood...' }
   }
+  // top: 20%;
+  //   left: 8%;
+  //   width: 2px;
+  //   height: 33%;
+  //   /* transform: rotate(-90deg); */
+  //   transform-origin: 0px 0px;
 ];
 
 const ImageWithAnnotationsGrid = ({ imageUrl, features = defaultFeatures, altText = "Annotated product" }) => {

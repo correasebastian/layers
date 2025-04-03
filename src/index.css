@@ -18,7 +18,7 @@
   grid-template-columns: 1fr; /* Single column takes full width */
   grid-template-rows: auto; /* Row height determined by content (image) */
   width: 100%; /* Or specific dimensions */
-  max-width: 900px; /* Example constraint */
+  /* max-width: 900px; */
   margin: auto; /* Center the container */
   /* We no longer need position: relative here for layering */
 }
@@ -90,4 +90,19 @@
 
 .annotation-text .description {
   font-size: 9px;
+}
+
+
+/* Fluid typography using clamp */
+.annotation-text .title {
+  display: block;
+  font-size: clamp(0.8rem, 0.6vw + 0.5rem, 1.2rem);
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+.annotation-text .description {
+  display: block;
+  font-size: clamp(0.7rem, 0.5vw + 0.4rem, 1rem);
+  line-height: 1.3;
 }
