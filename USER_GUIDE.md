@@ -146,3 +146,6 @@ If you encounter issues not covered in this guide, please:
 - The token is stored in the `.env` file with restricted permissions (readable only by you)
 - Consider using a token with the minimum necessary permissions and a short expiration time
 - Regularly rotate your tokens for enhanced security
+
+
+sebas
