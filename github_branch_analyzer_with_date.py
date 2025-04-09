@@ -135,26 +135,30 @@ class GitHubBranchAnalyzer:
 
 def main():
     # Parse command line arguments
-    parser = argparse.ArgumentParser(description='Analyze GitHub repository branches with date filtering')
+    parser = argparse.ArgumentParser(description='Analyze GitHub repository branches with date or timestamp filtering')
     parser.add_argument('--date', type=str, help='Analysis date in ISO format (YYYY-MM-DD)')
+    parser.add_argument('--timestamp', type=str, help='Analysis timestamp in ISO format (YYYY-MM-DDTHH:MM:SS)')
     parser.add_argument('--output', type=str, help='Output file path')
     args = parser.parse_args()
-    
+
     # Check if environment variables are set
     token = os.environ.get("GITHUB_TOKEN")
     repo_name = os.environ.get("GITHUB_REPO")
     main_branch = os.environ.get("MAIN_BRANCH", "main")
     release_branch = os.environ.get("RELEASE_BRANCH", "release")
-    
+
     if not token or not repo_name:
         print("Error: GITHUB_TOKEN and GITHUB_REPO environment variables must be set.")
         print("Example usage:")
         print("  GITHUB_TOKEN=your_token GITHUB_REPO=owner/repo python github_branch_analyzer.py")
         return
-    
+
+    # Determine the filtering date or timestamp
+    filter_date = args.timestamp if args.timestamp else args.date
+
     # Create analyzer and run analysis
     analyzer = GitHubBranchAnalyzer(token, repo_name, main_branch, release_branch)
-    analyzer.save_results(args.date, args.output)
+    analyzer.save_results(filter_date, args.output)
 
 if __name__ == "__main__":
     main()
