@@ -7,6 +7,7 @@
     "feature/add-actions",
     "feature/add-actions",
     "feature/add-actions",
+    "feature/add-actions",
     "feature/sites-42",
     "feature/sites-41"
   ],
@@ -15,9 +16,9 @@
     "feature/sites-40"
   ],
   "releaseOnly": [
-    "feature/sites-41",
     "feature/sites-42",
-    "feature/add-actions"
+    "feature/add-actions",
+    "feature/sites-41"
   ],
   "mainDetails": [
     {
@@ -28,6 +29,12 @@
     }
   ],
   "releaseDetails": [
+    {
+      "name": "feature/add-actions",
+      "merged_at": "2025-04-09T02:12:05+00:00",
+      "pr_number": 8,
+      "pr_title": "just to retrigger"
+    },
     {
       "name": "feature/add-actions",
       "merged_at": "2025-04-09T02:06:18+00:00",
@@ -65,19 +72,19 @@
       "pr_title": "using grid areas"
     }
   ],
-  "timestamp": "2025-04-09T02:06:41.603290",
+  "timestamp": "2025-04-09T02:12:22.382455",
   "repository": "correasebastian/layers",
   "analysisDate": "latest",
   "stats": {
     "total_branches": 4,
     "main_count": 1,
-    "release_count": 6,
+    "release_count": 7,
     "common_count": 0,
     "main_only_count": 1,
     "release_only_count": 3,
     "repository": "correasebastian/layers",
-    "timestamp": "2025-04-09T02:06:41.603290",
-    "analysis_time": "2025-04-09T02:06:41.654082",
+    "timestamp": "2025-04-09T02:12:22.382455",
+    "analysis_time": "2025-04-09T02:12:22.432635",
     "analysis_date": "latest",
     "common_percentage": 0.0,
     "main_only_percentage": 25.0,
