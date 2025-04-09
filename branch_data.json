@@ -1,0 +1,42 @@
+{
+  "main": [
+    "feature/sites-40"
+  ],
+  "release": [
+    "feature/sites-42",
+    "feature/sites-41"
+  ],
+  "common": [],
+  "mainOnly": [
+    "feature/sites-40"
+  ],
+  "releaseOnly": [
+    "feature/sites-41",
+    "feature/sites-42"
+  ],
+  "mainDetails": [
+    {
+      "name": "feature/sites-40",
+      "merged_at": "2025-04-08T18:55:00+00:00",
+      "pr_number": 1,
+      "pr_title": "hello"
+    }
+  ],
+  "releaseDetails": [
+    {
+      "name": "feature/sites-42",
+      "merged_at": "2025-04-09T01:10:20+00:00",
+      "pr_number": 3,
+      "pr_title": "add sites-42"
+    },
+    {
+      "name": "feature/sites-41",
+      "merged_at": "2025-04-08T18:58:45+00:00",
+      "pr_number": 2,
+      "pr_title": "using grid areas"
+    }
+  ],
+  "timestamp": "2025-04-08T20:48:59.461936",
+  "repository": "correasebastian/layers",
+  "analysisDate": "latest"
+}
