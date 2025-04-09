@@ -1,0 +1,39 @@
+{
+  "main": [
+    "feature/profile-789",
+    "feature/payment-456",
+    "feature/auth-123"
+  ],
+  "release": [
+    "feature/notification-202",
+    "feature/search-101",
+    "feature/auth-123"
+  ],
+  "common": [
+    "feature/auth-123"
+  ],
+  "mainOnly": [
+    "feature/profile-789",
+    "feature/payment-456"
+  ],
+  "releaseOnly": [
+    "feature/notification-202",
+    "feature/search-101"
+  ],
+  "timestamp": "2025-04-08T15:18:44-04:00",
+  "repository": "example/private-repo",
+  "stats": {
+    "total_branches": 5,
+    "main_count": 3,
+    "release_count": 3,
+    "common_count": 1,
+    "main_only_count": 2,
+    "release_only_count": 2,
+    "repository": "example/private-repo",
+    "timestamp": "2025-04-08T15:18:44-04:00",
+    "analysis_time": "2025-04-08T15:19:23.331491",
+    "common_percentage": 20.0,
+    "main_only_percentage": 40.0,
+    "release_only_percentage": 40.0
+  }
+}

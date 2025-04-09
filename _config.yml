@@ -1,0 +1,43 @@
+# GitHub Pages Configuration
+
+# This file configures GitHub Pages for the branch comparison visualization
+
+# Use Jekyll to process the site
+# Set to false if you're not using Jekyll (recommended for this project)
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Build settings
+# Use the docs folder for GitHub Pages
+source: ./
+destination: ./_site
+
+# Exclude these files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .github
+  - README.md
+  - LICENSE
+  - .gitignore
+  - "*.py"
+  - "*.sh"
+  - "*.env"
+
+# Site settings
+title: Git Branch Comparison
+description: Visualizing differences between main and release branches with date filtering
+baseurl: ""  # the subpath of your site, e.g. /blog
+url: ""  # the base hostname & protocol for your site, e.g. http://example.com
+
+# Custom settings for this project
+permalink: pretty

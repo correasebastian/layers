@@ -1,0 +1,19 @@
+{
+  "main": [
+    "feature/sites-40"
+  ],
+  "release": [
+    "feature/sites-42",
+    "feature/sites-41"
+  ],
+  "common": [],
+  "mainOnly": [
+    "feature/sites-40"
+  ],
+  "releaseOnly": [
+    "feature/sites-42",
+    "feature/sites-41"
+  ],
+  "timestamp": "2025-04-08T20:15:31.377187",
+  "repository": "correasebastian/layers"
+}

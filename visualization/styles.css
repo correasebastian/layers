@@ -1,0 +1,156 @@
+/* Add styles for the date selector section */
+.date-selector {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.date-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#analysis-date {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#update-date-button {
+  padding: 8px 16px;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#update-date-button:hover {
+  background-color: #3182ce;
+}
+
+.date-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+#current-date {
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.date-help {
+  font-style: italic;
+}
+
+/* Styles for the history view section */
+.history-view {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#show-history-button {
+  padding: 8px 16px;
+  background-color: #38b2ac;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+#show-history-button:hover {
+  background-color: #319795;
+}
+
+.history-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.history-date-button {
+  padding: 6px 12px;
+  background-color: #e2e8f0;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.history-date-button:hover {
+  background-color: #cbd5e0;
+}
+
+.history-date-button.active {
+  background-color: #4299e1;
+  color: white;
+  border-color: #3182ce;
+}
+
+.history-chart {
+  height: 300px;
+  margin-top: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Loading indicator */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #4299e1;
+  animation: spin 1s ease-in-out infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .date-control {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .date-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .history-dates {
+    flex-direction: column;
+  }
+}
