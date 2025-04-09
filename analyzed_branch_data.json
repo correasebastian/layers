@@ -19,9 +19,7 @@
       "name": "feature/sites-40",
       "merged_at": "2025-04-08T18:55:00+00:00",
       "pr_number": 1,
-      "pr_title": "hello",
-      "pr_url": "https://github.com/correasebastian/layers/pull/1",
-      "author": "correasebastian"
+      "pr_title": "hello"
     }
   ],
   "releaseDetails": [
@@ -29,20 +27,16 @@
       "name": "feature/sites-42",
       "merged_at": "2025-04-09T01:10:20+00:00",
       "pr_number": 3,
-      "pr_title": "add sites-42",
-      "pr_url": "https://github.com/correasebastian/layers/pull/3",
-      "author": "correasebastian"
+      "pr_title": "add sites-42"
     },
     {
       "name": "feature/sites-41",
       "merged_at": "2025-04-08T18:58:45+00:00",
       "pr_number": 2,
-      "pr_title": "using grid areas",
-      "pr_url": "https://github.com/correasebastian/layers/pull/2",
-      "author": "correasebastian"
+      "pr_title": "using grid areas"
     }
   ],
-  "timestamp": "2025-04-08T20:27:33.243559",
+  "timestamp": "2025-04-08T20:48:59.461936",
   "repository": "correasebastian/layers",
   "analysisDate": "latest",
   "stats": {
@@ -53,8 +47,8 @@
     "main_only_count": 1,
     "release_only_count": 2,
     "repository": "correasebastian/layers",
-    "timestamp": "2025-04-08T20:27:33.243559",
-    "analysis_time": "2025-04-08T20:27:57.149519",
+    "timestamp": "2025-04-08T20:48:59.461936",
+    "analysis_time": "2025-04-08T20:49:32.478997",
     "analysis_date": "latest",
     "common_percentage": 0.0,
     "main_only_percentage": 33.3,
