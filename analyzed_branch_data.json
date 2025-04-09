@@ -1,0 +1,86 @@
+{
+  "main": [
+    "feature/sites-40"
+  ],
+  "release": [
+    "feature/add-actions",
+    "feature/add-actions",
+    "feature/add-actions",
+    "feature/add-actions",
+    "feature/sites-42",
+    "feature/sites-41"
+  ],
+  "common": [],
+  "mainOnly": [
+    "feature/sites-40"
+  ],
+  "releaseOnly": [
+    "feature/sites-41",
+    "feature/sites-42",
+    "feature/add-actions"
+  ],
+  "mainDetails": [
+    {
+      "name": "feature/sites-40",
+      "merged_at": "2025-04-08T18:55:00+00:00",
+      "pr_number": 1,
+      "pr_title": "hello"
+    }
+  ],
+  "releaseDetails": [
+    {
+      "name": "feature/add-actions",
+      "merged_at": "2025-04-09T02:06:18+00:00",
+      "pr_number": 7,
+      "pr_title": "remove the copy"
+    },
+    {
+      "name": "feature/add-actions",
+      "merged_at": "2025-04-09T02:05:01+00:00",
+      "pr_number": 6,
+      "pr_title": "remove interval job for now"
+    },
+    {
+      "name": "feature/add-actions",
+      "merged_at": "2025-04-09T02:03:31+00:00",
+      "pr_number": 5,
+      "pr_title": "handle timestamp"
+    },
+    {
+      "name": "feature/add-actions",
+      "merged_at": "2025-04-09T01:57:00+00:00",
+      "pr_number": 4,
+      "pr_title": "Feature/add actions"
+    },
+    {
+      "name": "feature/sites-42",
+      "merged_at": "2025-04-09T01:10:20+00:00",
+      "pr_number": 3,
+      "pr_title": "add sites-42"
+    },
+    {
+      "name": "feature/sites-41",
+      "merged_at": "2025-04-08T18:58:45+00:00",
+      "pr_number": 2,
+      "pr_title": "using grid areas"
+    }
+  ],
+  "timestamp": "2025-04-09T02:06:41.603290",
+  "repository": "correasebastian/layers",
+  "analysisDate": "latest",
+  "stats": {
+    "total_branches": 4,
+    "main_count": 1,
+    "release_count": 6,
+    "common_count": 0,
+    "main_only_count": 1,
+    "release_only_count": 3,
+    "repository": "correasebastian/layers",
+    "timestamp": "2025-04-09T02:06:41.603290",
+    "analysis_time": "2025-04-09T02:06:41.654082",
+    "analysis_date": "latest",
+    "common_percentage": 0.0,
+    "main_only_percentage": 25.0,
+    "release_only_percentage": 75.0
+  }
+}

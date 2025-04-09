@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Branch Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Git Branch Comparison</h1>
+        <p>Visualizing differences between main and release branches</p>
+    </header>
+
+    <main>
+        <section class="date-selector">
+            <h2>Analysis Date</h2>
+            <div class="date-control">
+                <input type="date" id="analysis-date" name="analysis-date">
+                <button id="update-date-button">Update Analysis</button>
+            </div>
+            <div class="date-info">
+                <p>Current analysis: <span id="current-date">Latest</span></p>
+                <p class="date-help">Select a date to see branch status as of that date</p>
+            </div>
+        </section>
+
+        <section class="overview">
+            <h2>Branch Overview</h2>
+            <div class="branch-stats">
+                <div class="stat-card">
+                    <h3>Main Branch</h3>
+                    <p>Total merged branches: <span id="main-count">0</span></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Release Branch</h3>
+                    <p>Total merged branches: <span id="release-count">0</span></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Common Branches</h3>
+                    <p>Branches in both: <span id="common-count">0</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="visualization">
+            <h2>Branch Visualization</h2>
+            <div id="venn-diagram"></div>
+        </section>
+
+        <section class="branch-details">
+            <h2>Branch Details</h2>
+            
+            <div class="branch-list">
+                <div class="branch-column">
+                    <h3>Main Branch</h3>
+                    <ul id="main-branches">
+                        <!-- Will be populated dynamically -->
+                    </ul>
+                </div>
+                
+                <div class="branch-column">
+                    <h3>Release Branch</h3>
+                    <ul id="release-branches">
+                        <!-- Will be populated dynamically -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="unique-branches">
+            <h2>Unique Branches</h2>
+            
+            <div class="branch-list">
+                <div class="branch-column">
+                    <h3>Only in Main</h3>
+                    <ul id="main-only">
+                        <!-- Will be populated dynamically -->
+                    </ul>
+                </div>
+                
+                <div class="branch-column">
+                    <h3>Only in Release</h3>
+                    <ul id="release-only">
+                        <!-- Will be populated dynamically -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="common-branches">
+            <h2>Common Branches</h2>
+            <ul id="common-branches">
+                <!-- Will be populated dynamically -->
+            </ul>
+        </section>
+
+        <section class="history-view" id="history-section">
+            <h2>Historical Analysis</h2>
+            <div class="history-controls">
+                <button id="show-history-button">Show History</button>
+                <div id="history-dates" class="history-dates">
+                    <!-- Will be populated dynamically -->
+                </div>
+            </div>
+            <div id="history-chart" class="history-chart">
+                <!-- Will be populated dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with ❤️ by Manus AI</p>
+        <p class="update-info">Last updated: <span id="last-updated">Loading...</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="timeline.js"></script>
+</body>
+</html>
