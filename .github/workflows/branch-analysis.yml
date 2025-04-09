@@ -51,9 +51,6 @@ jobs:
           # Create visualization directory if it doesn't exist
           mkdir -p visualization
           
-          # Copy visualization files
-          cp -r git-branch-comparison-website/* visualization/
-          
           # Copy analysis results
           cp analyzed_branch_data*.json visualization/
 
